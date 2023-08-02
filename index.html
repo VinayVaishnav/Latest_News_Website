@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="" onclick="reload()">
+                <img class="img" src="istockphoto-1181901573-612x612.jpg" alt="">
+            </a>
+            <div class="topics">
+                <ul>
+                    <li class="nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="nav-item" id="Educational" onclick="onNavItemClick('Educational')">Educational</li>
+                    <li class="nav-item" id="Fashion" onclick="onNavItemClick('Fashion')">Fashion</li>
+                </ul>
+            </div>
+            <div class="flex searchbar">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. IPL">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container flex">
+        <div class="container flex cards-container" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="download.png" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Title op</h3>
+                <h5 class="news-source" id="news-source">Source op</h5>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quibusdam.</p>
+            </div>
+        </div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>
