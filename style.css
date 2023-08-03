@@ -8,7 +8,7 @@ nav{
     top: 0;
     right: 0;
     left: 0;
-    background-color: #e5f1fa;
+    background-color: #303030;
     box-shadow: 0 0 4px #bbd0e2;
 
     >div{
@@ -26,6 +26,7 @@ img{
     width: 200px;
 }
 ul{
+    color: white;
     font-weight: 1000;
     padding: 0;
     display: flex;
@@ -73,6 +74,7 @@ li:hover{
     cursor: pointer;
 }
 main{
+    background-color: #fff;
     margin-top: 150px;
 }
 
